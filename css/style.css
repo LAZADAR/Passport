@@ -1,0 +1,420 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  width: 100%;
+  height: 1000px;
+  background: no-repeat
+    linear-gradient(142deg, rgb(59, 0, 255) 0%, rgb(255, 253, 69) 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  max-width: 100%;
+  perspective: 1400px;
+  justify-content: center;
+}
+.container .LOGO {
+  background-color: #000000;
+  font-family: "Montserrat";
+  font-weight: 600;
+  position: absolute;
+  margin-top: 30px;
+  font-size: 48px;
+  color: white;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.passport {
+  width: 856px;
+  height: 540px;
+  display: flex;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  margin-top: 280px;
+  -webkit-animation-name: papa;
+  animation-name: papa;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.passport .front {
+  position: absolute;
+  z-index: 2;
+  background: url(/img/pngegg.png) no-repeat center;
+  border-radius: 2px;
+  background-color: #ededed;
+  width: 856px;
+  height: 540px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  max-width: 100%;
+  transform: translateZ(15px);
+}
+.passport .front .shadow1 {
+  z-index: 3;
+  position: absolute;
+  width: 856px;
+  height: 540px;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-animation-name: shadows;
+  animation-name: shadows;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.passport .front header {
+  margin-top: 20px;
+  min-width: 856px;
+  display: flex;
+  height: 100px;
+  position: relative;
+}
+.passport .front header .title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 32px;
+  display: flex;
+  position: absolute;
+  left: 62%;
+  margin-left: -62.5px;
+}
+.passport .front header .title2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 32px;
+  display: flex;
+  position: absolute;
+  left: 38%;
+  margin-left: -62.5px;
+}
+.passport .front header .flag {
+  max-width: 120px;
+  max-height: 90px;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 83%;
+}
+.passport .front header .gerb {
+  width: 47px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.passport .front main {
+  max-width: 856px;
+  max-height: 400px;
+  display: flex;
+  align-items: flex-end;
+}
+.passport .front main .block1 {
+  max-width: 380px;
+}
+.passport .front main .block1 .photo {
+  border-radius: 10px;
+  background-color: #ededed;
+  margin-left: -17px;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-left: 28px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 360px;
+}
+.passport .front main .block2 {
+  font-family: "Montserrat";
+  font-size: 28px;
+  line-height: 25px;
+  margin-left: 50px;
+  font-weight: 600;
+  width: 250px;
+  height: 360px;
+  align-items: center;
+  display: block;
+}
+.passport .front main .teg {
+  font-weight: 200;
+  font-size: 15px;
+}
+.passport .front main .block3 {
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 600;
+  width: 200px;
+  height: 237px;
+  width: 300px;
+}
+.passport .left {
+  border-radius: 2px;
+  background-color: rgb(167, 167, 167);
+  width: 14px;
+  height: 540px;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(849px) translateX(-7px);
+}
+.passport .right {
+  border-radius: 4px;
+  background-color: rgb(167, 167, 167);
+  width: 15px;
+  height: 540px;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(-7px) translateX(-7px);
+}
+.passport .back {
+  background: url(/img/pngegg23.png) no-repeat center;
+  border-radius: 2px;
+  background-color: #ededed;
+  width: 856px;
+  height: 540px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  transform: rotateY(-180deg);
+  max-width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.passport .back .shadow2 {
+  z-index: 3;
+  position: absolute;
+  width: 856px;
+  height: 540px;
+  background-color: black;
+  -webkit-animation-name: shadowss;
+  animation-name: shadowss;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.passport .back .up {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 856px;
+  height: 200px;
+  display: flex;
+}
+.passport .back .up .teg {
+  font-weight: 200;
+  font-size: 15px;
+}
+.passport .back .block1 {
+  font-family: "Montserrat";
+  font-size: 28px;
+  line-height: 25px;
+  font-weight: 600;
+  width: 250px;
+  height: 350px;
+  align-items: center;
+}
+.passport .back .block2 {
+  margin-left: 180px;
+  font-family: "Montserrat";
+  font-size: 28px;
+  line-height: 25px;
+  font-weight: 600;
+  width: 250px;
+  height: 350px;
+  align-items: center;
+}
+.passport .back .block2 .teg {
+  font-weight: 200;
+  font-size: 15px;
+}
+.passport .back .line {
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 12px;
+  text-align: center;
+  margin-top: 90px;
+  background-color: rgb(152, 152, 152);
+  width: 856px;
+  height: 30px;
+}
+.passport .back .foot {
+  overflow: hidden;
+  width: 856px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: start;
+  font-family: "Montserrat";
+  font-size: 30px;
+}
+
+@-webkit-keyframes papa {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes papa {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+@-webkit-keyframes shadows {
+  0% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  7% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  25% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes shadows {
+  0% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  7% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  25% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@-webkit-keyframes shadowss {
+  0% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  20% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  54% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  80% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+@keyframes shadowss {
+  0% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  20% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  54% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  80% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+} /*# sourceMappingURL=style.css.map */
